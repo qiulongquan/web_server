@@ -6,8 +6,12 @@ https://github.com/aosabook/500lines/tree/master/web-server
 项目代码使用 MIT 协议，项目文档使用 http://creativecommons.org/licenses/by/3.0/legalcode 协议。
 
 实验简介
-互联网在过去20年里已经大大地改变了我们的生活方式，影响着社会。但是反观互联网，它的基础－web的核心原理并没有改变多少。大部分web系统仍旧遵守 Tim Berners-Lee 20 多年前提出的 W3C 标准，大部分web服务器接收的信息格式与方式与过去并无二致。
-本课程将通过使用 Python 语言实现一个 Web 服务器，探索 HTTP 协议和 Web 服务的基本原理，同时学习 Python 如何实现 Web 服务请求、响应、错误处理及CGI协议，最后会根据项目需求使用 Python 面向对象思路对代码进行重构。
+互联网在过去20年里已经大大地改变了我们的生活方式，影响着社会。
+但是反观互联网，它的基础－web的核心原理并没有改变多少。大部分web系统仍旧遵守 Tim Berners-Lee 20 多年前提出的 W3C 标准，
+大部分web服务器接收的信息格式与方式与过去并无二致。
+本课程将通过使用 Python 语言实现一个 Web 服务器，
+探索 HTTP 协议和 Web 服务的基本原理，同时学习 Python 如何实现 Web 服务请求、响应、错误处理及CGI协议，
+最后会根据项目需求使用 Python 面向对象思路对代码进行重构。
 
 实验知识点
 	1	HTTP 协议基本原理
