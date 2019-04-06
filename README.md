@@ -63,5 +63,23 @@ WSGI说明图<br>
 5.wsgi handler 调用注册的wsgi app，并将environ和回调函数传给wsgi app
 6.wsgi app 将reponse header/status/body 回传给wsgi handler
 7.最终handler还是通过socket将response信息塞回给客户端。
+
+
+[Python]subprocess-call、check_call、check_output
+subprocess模块用来创建新的进程，连接到其stdin、stdout、stderr管道并获取它们的返回码。
+https://blog.csdn.net/liushuibufuqin/article/details/78892831#checkoutput
+
+//test.py
+import subprocess as sp
+sp.call('python run.py', shell = True, stdin=open('fake_input', 'r'), stdout=open('result', 'w'))
+
+//run.py
+i = int(raw_input("Input a number:"))
+print "You input number:", i
+
+运行test.py后result中内容为：
+
+Input a number:You input number: 12
+
 ```
 
