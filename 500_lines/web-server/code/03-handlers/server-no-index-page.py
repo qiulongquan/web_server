@@ -135,6 +135,7 @@ class RequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
             entries = os.listdir(full_path)
             bullets = ['<li>{0}</li>'.format(e) for e in entries if not e.startswith('.')]
             page = self.Listing_Page.format('\n'.join(bullets))
+            print(page)
             self.send_content(page)
         except OSError as msg:
             msg = "'{0}' cannot be listed: {1}".format(self.path, msg)

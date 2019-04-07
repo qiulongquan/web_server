@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 import sys, os, BaseHTTPServer
 
 #-------------------------------------------------------------------------------
@@ -155,6 +156,7 @@ class RequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
     def run_cgi(self, full_path):
         cmd = "python " + full_path
+        # 自2.6版弃用：此模块已过时。使用该subprocess模块。特别检查用子流程模块部分替换旧功能。
         child_stdin, child_stdout = os.popen2(cmd)
         child_stdin.close()
         data = child_stdout.read()
